@@ -24,6 +24,7 @@ typeWriter();
 
 // retail script
 
+// donate search info here
 function search() {
     let filter = document.getElementById('find').value.toUpperCase();
     let item = document.querySelectorAll('.product');
@@ -42,6 +43,54 @@ function search() {
     }
 
     //retail 
+    function search1() {
+        let filter = document.getElementById('find1').value.toUpperCase();
+        let products = document.querySelectorAll('.product');
     
+        // Loop through all product items
+        for (var i = 0; i < products.length; i++) {
+            let title = products[i].getElementsByTagName('h3')[0];
+    
+            // Check if title exists
+            if (title) {
+                let textValue = title.textContent || title.innerText;
+    
+                // Control visibility based on search filter
+                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                    products[i].style.display = "";
+                } else {
+                    products[i].style.display = "none";
+                }
+            } else {
+                // If no title is found, hide the product
+                products[i].style.display = "none";
+            }
+        }
+    }
+
+    function search2() {
+        let filter = document.getElementById('find2').value.toUpperCase();
+        let products = document.querySelectorAll('.product');
+    
+        // Loop through all product items
+        for (var i = 0; i < products.length; i++) {
+            let title = products[i].getElementsByTagName('h3')[0];
+    
+            // Check if title exists
+            if (title) {
+                let textValue = title.textContent || title.innerText;
+    
+                // Control visibility based on search filter
+                if (textValue.toUpperCase().indexOf(filter) > -1) {
+                    products[i].style.display = "";
+                } else {
+                    products[i].style.display = "none";
+                }
+            } else {
+                // If no title is found, hide the product
+                products[i].style.display = "none";
+            }
+        }
+    }
 
     
