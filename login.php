@@ -4,7 +4,7 @@ session_start();
 
 // check if the user is already logged in
 if (isset($_SESSION['username'])) {
-    header("location: home.html");
+    header("location: cover.html");
     exit;
 }
 
@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         $_SESSION["loggedin"] = true;
 
                         // Redirect user to welcome page
-                        header("location: home.html");
+                        header("location: cover.html");
                     } else {
                         // Wrong password
                         $wrongPassword = true;
