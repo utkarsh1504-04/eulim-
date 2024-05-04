@@ -83,7 +83,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $param_phone = $phone;
 
             // Try to execute the query
-            if (mysqli_stmt_execute($stmt)) {s
+            if (mysqli_stmt_execute($stmt)) {
                 header("location: signuppage.html");
             } else {
                 echo "Something went wrong... cannot redirect!";
