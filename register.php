@@ -83,8 +83,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $param_phone = $phone;
 
             // Try to execute the query
-            if (mysqli_stmt_execute($stmt)) {
-                header("location: register.html");
+            if (mysqli_stmt_execute($stmt)) {s
+                header("location: signuppage.html");
             } else {
                 echo "Something went wrong... cannot redirect!";
             }
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <!-- Display alert if the password is wrong -->
     <script>
         alert("Please try again.");
-        window.location.href = "register.html"; // Redirect to login.html
+        window.location.href = "signuppage.html"; // Redirect to login.html
     </script>
     <!-- Your HTML form goes here -->
 </body>

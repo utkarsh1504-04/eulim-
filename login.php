@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <!-- Display alert if the password is wrong -->
         <script>
             alert("Incorrect password and Username. Please try again.");
-            window.location.href = "register.html"; // Redirect to login.html
+            window.location.href = "signuppage.html"; // Redirect to login.html
         </script>
     
     <!-- Your HTML form goes here -->
